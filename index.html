@@ -1,17 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>SkillBakery</title>
-  </head>
-  <body>
-    <h1 class="text-center text-danger">day ne</h1>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="./styles.css" />
+	<title>SkillBakery</title>
+</head>
+
+<body>
+	<div class="">
+		<div class="w-100">
+			<div class="card-img-overlay">
+				<img src="img/image4.png" width="100%" alt="" />
+			</div>
+			<div class="bg-blur px-5">
+				<nav class="navbar navbar-expand-lg bg-transparent border-bottom">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img src="img/Logo.png" alt="Logo" width="155" height="100%"
+								class="d-inline-block align-text-top" />
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+							<ul class="navbar-nav col-8 justify-content-around">
+								<li class="nav-item">
+									<a class="nav-link txt-nav" aria-current="page" href="#">All Courses</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link txt-nav" href="#">Free</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link txt-nav" href="#">Web Developer</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link txt-nav" href="#">App</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link txt-nav" href="#">Popular</a>
+								</li>
+							</ul>
+							<form class="position-relative" role="search">
+								<input class="input-search" type="search" placeholder="Search..." />
+								<img class="icon-search" src="icon/search.png" alt="" srcset="" />
+							</form>
+							<!-- <button class="nav-item btn-cart">
+                  <img src="icon/ion_cart.png" alt="" />
+                </button>
+                <button class="btn-cart">
+                  <img src="icon/user.png" alt="" />
+                </button>
+                <button class="btn-sign-up">Sign up</button> -->
+						</div>
+					</div>
+				</nav>
+				<div class="bg-transparent d-flex justify-content-end">
+					<div class="m-3">
+						<a class="nav-link txt-nav1 active" href="#">Home</a>
+					</div>
+					<div class="m-3">
+						<a class="nav-link txt-nav1" href="#">Our Courses</a>
+					</div>
+					<div class="m-3">
+						<a class="nav-link txt-nav1" href="#">Reviews</a>
+					</div>
+					<div class="m-3">
+						<a class="nav-link txt-nav1" href="#">Who we are</a>
+					</div>
+					<div class="m-3">
+						<a class="nav-link txt-nav1" href="#">Blog</a>
+					</div>
+				</div>
+			</div>
+			<div class="p-5">
+				<div class="position-relative">
+					<h1 class="text-white txt-intro card-text">
+						Web-Development Courses
+					</h1>
+					<span class="text-white txt-content">Get our amazing courses on Udemy at great discounts</span>
+				</div>
+				<div class="d-flex">
+					<button class="btn-course">40000 Happy</button>
+					<button class="btn-course">40000 Happy</button>
+					<button class="btn-course">30 Course</button>
+				</div>
+				<button class="btn-sign-up position-relative" data-bs-target="#signUp" data-bs-toggle="modal">Sign
+					up</button>
+
+				<h3 class="position-relative text-white">Popular</h3>
+				<div class="grid mt-5">
+					<div class="card">
+						<img src="img/image1.png" class="card-img" alt="..." />
+						<div class="card-body card-img-overlay">
+							<p class="card-text description bg-blur">
+								With supporting text below as a natural lead-in to additional
+								content.
+							</p>
+							<h5 class="card-title bg-blur">Special title treatment</h5>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/image2.png" class="card-img" alt="..." />
+						<div class="card-body card-img-overlay">
+							<p class="card-text description bg-blur">
+								With supporting text below as a natural lead-in to additional
+								content.
+							</p>
+							<h5 class="card-title bg-blur">Special title treatment</h5>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/image3.png" class="card-img" alt="..." />
+						<div class="card-body card-img-overlay">
+							<p class="card-text description bg-blur">
+								With supporting text below as a natural lead-in to additional
+								content.
+							</p>
+							<h5 class="card-title bg-blur">Special title treatment</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
+
+<!-- Popup Sign-up password -->
+<div class="modal fade" id="signUp" aria-hidden="true" aria-labelledby="signUpModalToggleLabel" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="header">
+					<img src="icon/Vector.png" alt="" srcset="">
+					<h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign up</h1>
+					<p>Join us today</p>
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body d-flex flex-column align-items-center">
+				<form>
+					<div class="form-floating mb-3">
+						<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+						<label for="floatingInput">Email address</label>
+					</div>
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="floatingFName" placeholder="Full name">
+						<label for="floatingFName">Full Name</label>
+					</div>
+					<div class="form-floating mb-3">
+						<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+						<label for="floatingPassword">Password</label>
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">I accept the Terms of Service</label>
+					</div>
+					<button type="submit" class="btn-sign-up w-100">Sign up</button>
+				</form>
+				<p>Already have an account? <span class="text-primary btn" data-bs-target="#login"
+						data-bs-toggle="modal">Login<span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Popup Login -->
+<div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginModalToggleLabel" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="header">
+					<img src="icon/Vector.png" alt="" srcset="">
+					<h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome Back</h1>
+					<p>Provide Your Login Credentials</p>
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body d-flex flex-column align-items-center">
+				<form>
+					<div class="form-floating mb-3">
+						<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+						<label for="floatingInput">Email address</label>
+					</div>
+					<div class="form-floating">
+						<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+						<label for="floatingPassword">Password</label>
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">I accept the Terms of Service</label>
+					</div>
+					<button type="submit" class="btn-sign-up w-100">Log in</button>
+				</form>
+				<p>I forgot my password. <span class="text-primary btn" data-bs-target="#forgotPass"
+						data-bs-toggle="modal">Reset<span></p>
+				<button type="submit" class="btn-sign-up" data-bs-target="#signUp" data-bs-toggle="modal">Create New
+					Account</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Popup Reset password -->
+<div class="modal fade" id="forgotPass" aria-hidden="true" aria-labelledby="forgotPassModalToggleLabel" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="header">
+					<h1 class="modal-title fs-5" id="exampleModalToggleLabel">Forgot your password ?</h1>
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body d-flex flex-column align-items-center">
+				<form>
+					<div class="form-floating mb-3">
+						<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+						<label for="floatingInput">Email address</label>
+					</div>
+					<button type="submit" class="btn-sign-up btn btn-primary w-100">Reset Password</button>
+				</form>
+				<p>Or<span class="text-primary btn" data-bs-target="#login" data-bs-toggle="modal">Log in<span></p>
+			</div>
+		</div>
+	</div>
+</div>
